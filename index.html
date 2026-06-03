@@ -19,7 +19,7 @@
             text-align: center;
         }
 
-        /* Başlıkların Duracağı Ana Kutu */
+        /* Başlıkların ve Butonun Duracağı Ana Kutu */
         .container {
             background: rgba(22, 27, 34, 0.8);
             padding: 40px 60px;
@@ -47,6 +47,28 @@
             margin: 0;
             text-shadow: 0 0 10px rgba(88, 166, 255, 0.3);
         }
+
+        /* YimmenuV2 Buton Stili */
+        .menu-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 35px;
+            background-color: #238636; /* Yeşil renk */
+            color: #ffffff;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 6px;
+            box-shadow: 0 4px 15px rgba(35, 134, 54, 0.3);
+            transition: all 0.2s ease;
+        }
+
+        /* Butonun üzerine gelindiğinde olacak efekt */
+        .menu-button:hover {
+            background-color: #2ea44f; /* Daha açık yeşil */
+            box-shadow: 0 4px 20px rgba(46, 164, 79, 0.5);
+            transform: translateY(-2px); /* Hafif yukarı kalkma efekti */
+        }
     </style>
 </head>
 <body>
@@ -54,6 +76,8 @@
     <div class="container">
         <div class="created-by">Created by drift soul</div>
         <h1 class="main-title">Best hack menus web</h1>
+        
+        <a href="https://github.com/YimMenu/YimMenuV2" target="_blank" class="menu-button">YimmenuV2</a>
     </div>
 
 </body>
