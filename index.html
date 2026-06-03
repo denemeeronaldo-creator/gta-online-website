@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drift Soul - Menus</title>
     <style>
-        /* Genel Sayfa Ayarları (Koyu Tema) */
+        /* Genel Sayfa Ayarları ve Arka Plan Görseli */
         body {
             margin: 0;
             padding: 0;
-            background-color: #0d1117; /* Koyu gri/siyah arka plan */
+            /* İnternetten kaliteli, beyaz yazılı ve logolu bir Anonymous arka planı ekledik */
+            background: linear-gradient(rgba(13, 17, 23, 0.75), rgba(13, 17, 23, 0.75)), 
+                        url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1600') no-repeat center center fixed;
+            background-size: cover;
             color: #ffffff;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
@@ -19,14 +22,14 @@
             text-align: center;
         }
 
-        /* Başlıkların ve Butonların Duracağı Ana Kutu */
+        /* Başlıkların ve Butonların Duracağı Ana Kutu (Arka planı hafif şeffaf yaptık ki resim görünsün) */
         .container {
-            background: rgba(22, 27, 34, 0.8);
+            background: rgba(22, 27, 34, 0.85);
             padding: 40px 60px;
             border-radius: 12px;
             border: 1px solid #30363d;
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(4px);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(6px);
             max-width: 500px;
             width: 100%;
         }
@@ -34,10 +37,11 @@
         /* Üst Yazı: Created by drift soul */
         .created-by {
             font-size: 1.2rem;
-            color: #8b949e;
+            color: #c9d1d9;
             text-transform: uppercase;
             letter-spacing: 3px;
             margin-bottom: 10px;
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
         }
 
         /* Alt Yazı: Best hack menus web */
@@ -47,7 +51,7 @@
             font-weight: bold;
             text-transform: capitalize;
             margin: 0;
-            text-shadow: 0 0 10px rgba(88, 166, 255, 0.3);
+            text-shadow: 0 0 15px rgba(88, 166, 255, 0.4);
             margin-bottom: 20px;
         }
 
@@ -55,7 +59,7 @@
         .button-group {
             display: flex;
             flex-direction: column;
-            gap: 15px; /* Butonlar arasındaki boşluk */
+            gap: 15px;
             margin-top: 25px;
         }
 
@@ -72,7 +76,7 @@
         }
 
         .menu-button:hover {
-            transform: translateY(-2px); /* Hafif yukarı kalkma efekti */
+            transform: translateY(-2px);
         }
 
         /* YimmenuV2 - Yeşil Buton */
@@ -85,7 +89,7 @@
             box-shadow: 0 4px 20px rgba(46, 164, 79, 0.5);
         }
 
-        /* Xenos İnjektor - Mavi/Gri Buton */
+        /* Xenos İnjektor - Koyu Buton */
         .xenos-btn {
             background-color: #21262d;
             border: 1px solid #30363d;
@@ -94,7 +98,7 @@
         .xenos-btn:hover {
             background-color: #30363d;
             border-color: #8b949e;
-            color: #58a6ff; /* Üzerine gelince yazı mavi olur */
+            color: #58a6ff;
         }
     </style>
 </head>
